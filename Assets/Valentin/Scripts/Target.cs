@@ -4,7 +4,6 @@ using UnityEngine.AI;
 public class Target : MonoBehaviour
 {
     private Vector2 followSpot;
-    public float speed;
     public float perspectiveScale;
     public float scaleRatio;
 
@@ -26,7 +25,6 @@ public class Target : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(rb.velocity.magnitude);
         animator.SetFloat("Speed", rb.velocity.magnitude);
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetMouseButtonDown(0) && !isZ)
@@ -38,7 +36,6 @@ public class Target : MonoBehaviour
             followSpot = new Vector2(mousePosition.x, transform.position.y);
         }
         agent.SetDestination(new Vector3(followSpot.x, followSpot.y, transform.position.z));
-        //transform.position = Vector2.MoveTowards(transform.position, followSpot, Time.deltaTime * speed);
         AdjustPerspective();
     }
 
