@@ -347,6 +347,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Cuisine
   animator: {fileID: 1152136577}
+  Bas: 1
+  Haut: 0
 --- !u!61 &293693704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -938,7 +940,7 @@ GameObject:
   - component: {fileID: 1045802593}
   m_Layer: 0
   m_Name: collid
-  m_TagString: Player
+  m_TagString: "T\xEAte"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
