@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bea5e23-b21c-4de3-a6ae-c5dad9c3ca0f" name="Changes" comment="" />
+    <list default="true" id="31f0a350-c299-4bd3-be66-f441db31b789" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Thomas(H)/Scripts/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProjectId" id="27KgHY6j0PJSGl7HgsbKrUICHRY" />
+  <component name="ProjectId" id="27KONzPb9QJqcnkiqLY14QKo3eW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,7 +23,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.C#" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -51,18 +54,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1bea5e23-b21c-4de3-a6ae-c5dad9c3ca0f" name="Changes" comment="" />
-      <created>1649074106033</created>
+      <changelist id="31f0a350-c299-4bd3-be66-f441db31b789" name="Changes" comment="" />
+      <created>1649065276276</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1649074106033</updated>
-      <workItem from="1649074110120" duration="6161000" />
+      <updated>1649065276276</updated>
+      <workItem from="1649065297868" duration="7866000" />
+      <workItem from="1649144160151" duration="5243000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
