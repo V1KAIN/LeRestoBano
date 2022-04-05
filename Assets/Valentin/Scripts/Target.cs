@@ -46,6 +46,11 @@ public class Target : MonoBehaviour
         followSpot = transform.position;
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Menu")) followSpot = transform.position;
+    }
+
     private void AdjustSortingLayer()
     {
         spriteRenderer.sortingOrder = (int)(transform.position.y * -100);

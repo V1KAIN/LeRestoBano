@@ -349,6 +349,8 @@ MonoBehaviour:
   animator: {fileID: 1152136577}
   Bas: 1
   Haut: 0
+  Comptoir: 0
+  CraftPanel: {fileID: 0}
 --- !u!61 &293693704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1202,7 +1204,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4424
-  m_Sprite: {fileID: 21300000, guid: 56db2563a3bcd02429b355f56d983dc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a27caa42329b0b4f8fe9df5350429da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
