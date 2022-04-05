@@ -11,6 +11,7 @@ public class Target : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     
     public bool isZ;
+    public static bool isInMenu;
     
     public Animator animator;
 
@@ -27,11 +28,11 @@ public class Target : MonoBehaviour
     {
         animator.SetFloat("Speed", rb.velocity.magnitude);
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetMouseButtonDown(0) && !isZ)
+        if (Input.GetMouseButtonDown(0) && !isZ && !isInMenu)
         {
             followSpot = new Vector2(mousePosition.x, mousePosition.y);
         }
-        if (Input.GetMouseButtonDown(0) && isZ)
+        if (Input.GetMouseButtonDown(0) && isZ && !isInMenu)
         {
             followSpot = new Vector2(mousePosition.x, transform.position.y);
         }
@@ -55,5 +56,10 @@ public class Target : MonoBehaviour
         scale.x = perspectiveScale * (scaleRatio - transform.position.y);
         scale.y = perspectiveScale * (scaleRatio - transform.position.y);
         transform.localScale = scale;
+    }
+
+    public void NoMenu()
+    {
+        isInMenu = false;
     }
 }
