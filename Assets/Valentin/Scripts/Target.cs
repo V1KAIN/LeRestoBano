@@ -12,7 +12,6 @@ public class Target : MonoBehaviour
     public bool isZ;
     
     public Animator animator;
-    float horizontalMove = 0f;
 
     public Rigidbody2D rb;
     void Start()

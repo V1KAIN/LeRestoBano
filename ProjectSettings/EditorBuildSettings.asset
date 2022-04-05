@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Valentin/Scene/ValentinScene.unity
+    guid: b2b3cf8b160ef96449f785094430fd9e
+  - enabled: 1
+    path: Assets/Valentin/Scene/ValSceneDehors.unity
+    guid: 0778bc5daadc5c74c8fea3d7c0220165
   m_configObjects: {}
