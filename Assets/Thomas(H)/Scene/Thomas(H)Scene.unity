@@ -352,6 +352,9 @@ MonoBehaviour:
   actorName: {fileID: 434761242}
   messageText: {fileID: 1171455779}
   backgroundBox: {fileID: 885657836}
+  NextMessageKey: 32
+  PreviousMessageKey: 8
+  CanGoBackMessages: 1
 --- !u!1 &1112747397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,7 +1097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
