@@ -8,7 +8,8 @@ public class Target : MonoBehaviour
     public float scaleRatio;
 
     private NavMeshAgent agent;
-
+    public SpriteRenderer spriteRenderer;
+    
     public bool isZ;
     
     public Animator animator;
@@ -36,6 +37,7 @@ public class Target : MonoBehaviour
         }
         agent.SetDestination(new Vector3(followSpot.x, followSpot.y, transform.position.z));
         AdjustPerspective();
+        AdjustSortingLayer();
     }
 
     private void OnCollisionStay2D(Collision2D other)
@@ -43,6 +45,10 @@ public class Target : MonoBehaviour
         followSpot = transform.position;
     }
 
+    private void AdjustSortingLayer()
+    {
+        spriteRenderer.sortingOrder = (int)(transform.position.y * -100);
+    }
     private void AdjustPerspective()
     {
         Vector3 scale = transform.localScale;

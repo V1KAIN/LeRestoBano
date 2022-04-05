@@ -223,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   perspectiveScale: 0.75
   scaleRatio: 3
+  spriteRenderer: {fileID: 949191205}
   isZ: 1
   animator: {fileID: 949191204}
   rb: {fileID: 197614935}
@@ -1198,7 +1199,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 4424
   m_Sprite: {fileID: 21300000, guid: 56db2563a3bcd02429b355f56d983dc8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
