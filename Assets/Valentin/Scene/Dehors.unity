@@ -671,8 +671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f45db41a4dba734dbbc3fce942ca567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  perspectiveScale: 0.75
-  scaleRatio: 3
+  perspectiveScale: 1.3
+  scaleRatio: 0.05
   spriteRenderer: {fileID: 2076594667}
   isZ: 0
   animator: {fileID: 2076594665}
@@ -757,8 +757,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305193649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4131722, y: -1.8335129, z: -1.8959007}
-  m_LocalScale: {x: 3.6251347, y: 3.6251347, z: 1}
+  m_LocalPosition: {x: 2.15, y: -1.8333501, z: -1.3075107}
+  m_LocalScale: {x: 2.448355, y: 2.448355, z: 1}
   m_Children:
   - {fileID: 2076594666}
   - {fileID: 1919181748}
