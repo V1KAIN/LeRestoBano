@@ -6,6 +6,9 @@ TagManager:
   tags:
   - "T\xEAte"
   - Pied
+  - Menu
+  - Main
+  - Torse
   layers:
   - Default
   - TransparentFX
