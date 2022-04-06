@@ -12,8 +12,8 @@ public class InventoryScript : MonoBehaviour
     public static int Fromage;
     public static int Frite;
 
-    public static bool Burger;
-    public static bool Wrap;
-    public static bool OctaB;
-    public static bool NonBurger;
+    public static bool Burger = false;
+    public static bool Wrap = false;
+    public static bool OctaB = false;
+    public static bool NonBurger = false;
 }
