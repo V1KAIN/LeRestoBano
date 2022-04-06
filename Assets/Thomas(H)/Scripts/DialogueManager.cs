@@ -36,8 +36,10 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(NextMessageKey))NextDialogue();
-        if(Input.GetKeyDown(PreviousMessageKey)) PreviousDialogue(); 
+        if (Input.GetButtonDown("Fire1"))NextDialogue();
+        if(Input.GetButtonDown("Fire2"))PreviousDialogue();
+
+        Target.isInMenu = _isInDialogue;
     }
 
     //Démarre la conversation
@@ -48,6 +50,7 @@ public class DialogueManager : MonoBehaviour
         _activeMessage = 0;
         _isInDialogue = true;
         DialogueContentHolder.SetActive(true);
+        DialogueBoxAnimator.SetBool("GoIn",true);
         DisplayDialogue();
         Debug.Log("Started conversation, Loaded " + messages.Length + " messages between " + actors.Length + " actors" );
     }
@@ -67,6 +70,7 @@ public class DialogueManager : MonoBehaviour
             { 
                 Debug.Log("Conversation Ended!");
                 _isInDialogue = false;
+                DialogueBoxAnimator.SetBool("GoIn",false);
                 DialogueBoxAnimator.SetBool("GoOut", true);
                 Invoke(nameof(DesactivateDCH), .20f); 
             }
@@ -121,5 +125,6 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueContentHolder.SetActive(false);
         DialogueBoxAnimator.SetBool("GoOut",false);
+        DialogueBoxAnimator.SetBool("GoIn",false);
     }
 }
