@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using Unity.Mathematics;
@@ -9,6 +10,10 @@ public class PopUpTextScript : MonoBehaviour
     [Header("Drag & Drop")]
     [SerializeField] private GameObject textPrefab;
     [SerializeField] private AnimationClip textAnimation;
+    
+    [Header("Parameters")]
+    [SerializeField] private float spawnHeight;
+    
 
     //Privates
     private float timeToDisappear;
@@ -17,16 +22,12 @@ public class PopUpTextScript : MonoBehaviour
     {
         timeToDisappear = textAnimation.length;
     }
-    
-    
     public void SpawnText(string objectName)
     {
-        Vector3 spawnPos = new Vector3(gameObject.transform.position.x,
-            gameObject.transform.position.y + gameObject.transform.localScale.y,
-            gameObject.transform.position.z);
+        Vector3 spawnPos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + spawnHeight, gameObject.transform.position.z);
         
         GameObject textObject = Instantiate(textPrefab, spawnPos, quaternion.identity);
-        textObject.GetComponent<TextMeshProUGUI>().text = "+1 " + objectName;
+        textObject.GetComponentInChildren<TextMeshProUGUI>().text = "+1 " + objectName;
         
         StartCoroutine(DestroyText(textObject));
     }
