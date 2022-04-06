@@ -3151,6 +3151,57 @@ Transform:
   m_Father: {fileID: 1456599967}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1339047253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1339047254}
+  - component: {fileID: 1339047255}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1339047254
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339047253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2002178683}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1339047255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339047253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341926aef01b53a469337f0d080ad2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textPrefab: {fileID: 5323469936704674189, guid: c2b7ecf16bb7cc042a6fb80b1cc6f151, type: 3}
+  textAnimation: {fileID: 7400000, guid: 291ec7d8959d2a7419c33c4b6142f471, type: 2}
+  spawnHeight: 4.5
 --- !u!1 &1368630365
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,6 +3294,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1339047255}
+        m_TargetAssemblyTypeName: PopUpTextScript, Assembly-CSharp
+        m_MethodName: SpawnText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: steak
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1368630368
@@ -3509,6 +3572,7 @@ GameObject:
   - component: {fileID: 1456599965}
   - component: {fileID: 1456599964}
   - component: {fileID: 1456599963}
+  - component: {fileID: 1456599968}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3646,6 +3710,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1456599968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456599962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341926aef01b53a469337f0d080ad2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textPrefab: {fileID: 5323469936704674189, guid: c2b7ecf16bb7cc042a6fb80b1cc6f151, type: 3}
+  textAnimation: {fileID: 7400000, guid: 291ec7d8959d2a7419c33c4b6142f471, type: 2}
+  spawnHeight: 4.5
 --- !u!1 &1533301393
 GameObject:
   m_ObjectHideFlags: 0
@@ -4289,6 +4368,7 @@ RectTransform:
   - {fileID: 996872306}
   - {fileID: 2025542711}
   - {fileID: 1368630366}
+  - {fileID: 1339047254}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4459,6 +4539,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1339047255}
+        m_TargetAssemblyTypeName: PopUpTextScript, Assembly-CSharp
+        m_MethodName: SpawnText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: fromage
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2025542713

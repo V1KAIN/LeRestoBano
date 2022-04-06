@@ -3,8 +3,8 @@ using System.Collections;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.UI;
 
-[RequireComponent(typeof(Animator))]
 public class PopUpTextScript : MonoBehaviour
 {
     [Header("Drag & Drop")]
@@ -13,7 +13,6 @@ public class PopUpTextScript : MonoBehaviour
     
     [Header("Parameters")]
     [SerializeField] private float spawnHeight;
-    
 
     //Privates
     private float timeToDisappear;
@@ -27,8 +26,8 @@ public class PopUpTextScript : MonoBehaviour
         Vector3 spawnPos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + spawnHeight, gameObject.transform.position.z);
         
         GameObject textObject = Instantiate(textPrefab, spawnPos, quaternion.identity);
-        textObject.GetComponentInChildren<TextMeshProUGUI>().text = "+1 " + objectName;
-        
+        textObject.GetComponentInChildren<TextMeshPro>().text = "+1 " + objectName;
+
         StartCoroutine(DestroyText(textObject));
     }
 

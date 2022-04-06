@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 197614935}
   - component: {fileID: 197614934}
   - component: {fileID: 197614933}
+  - component: {fileID: 197614938}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -226,7 +227,6 @@ MonoBehaviour:
   spriteRenderer: {fileID: 949191205}
   isZ: 1
   animator: {fileID: 949191204}
-  rb: {fileID: 197614935}
 --- !u!50 &197614935
 Rigidbody2D:
   serializedVersion: 4
@@ -315,6 +315,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197614938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197614932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341926aef01b53a469337f0d080ad2e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textPrefab: {fileID: 5323469936704674189, guid: c2b7ecf16bb7cc042a6fb80b1cc6f151, type: 3}
+  textAnimation: {fileID: 7400000, guid: 291ec7d8959d2a7419c33c4b6142f471, type: 2}
+  spawnHeight: 4.5
 --- !u!1 &293693702
 GameObject:
   m_ObjectHideFlags: 0
