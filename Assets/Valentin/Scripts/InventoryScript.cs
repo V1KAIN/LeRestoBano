@@ -15,4 +15,5 @@ public class InventoryScript : MonoBehaviour
     public static bool Burger;
     public static bool Wrap;
     public static bool OctaB;
+    public static bool NonBurger;
 }
