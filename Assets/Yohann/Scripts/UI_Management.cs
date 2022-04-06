@@ -11,6 +11,8 @@ public class UI_Management : MonoBehaviour
     public GameObject NextUI;
     public bool ClickAgainToCloseNextUI;
     private int NextUIOpen;
+    public bool CloseMultipleUI;
+    public GameObject[] MultipleUI;
 
     private void Awake()
     {
@@ -41,23 +43,50 @@ public class UI_Management : MonoBehaviour
     {
         if(NextUI != null)
         {
-            if(ClickAgainToCloseNextUI != true)
+            if(!ClickAgainToCloseNextUI)
             {
                 collider.enabled = false;
                 NextUI.SetActive(true);
                 NextUIOpen++;
+                if (CloseMultipleUI)
+                {
+                    for (int i = 0; i < MultipleUI.Length; i++)
+                    {
+                        MultipleUI[i].SetActive(true);
+                    }
+                }
             }
             else
             {
                 switch (NextUIOpen)
                 {
                     case 0:
-                        NextUI.SetActive(true);
-                        NextUIOpen++;
+                        if(!CloseMultipleUI)
+                        {
+                            NextUI.SetActive(true);
+                            NextUIOpen++;
+                        }
+                        else
+                        {
+                            for (int i = 0; i < MultipleUI.Length; i++)
+                            {
+                                MultipleUI[i].SetActive(true);
+                            }
+                        }
                         break;
                     case 1:
-                        NextUI.SetActive(false);
-                        NextUIOpen--;
+                        if(!CloseMultipleUI)
+                        {
+                            NextUI.SetActive(false);
+                            NextUIOpen--;
+                        }
+                        else
+                        {
+                            for (int i = 0; i < MultipleUI.Length; i++)
+                            {
+                                MultipleUI[i].SetActive(false);
+                            }
+                        }
                         break;
                 }
             }
