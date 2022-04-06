@@ -496,6 +496,9 @@ MonoBehaviour:
   Galette: 0
   Fromage: 0
   Frite: 0
+  Burger: 0
+  Wrap: 0
+  OctaB: 0
 --- !u!1 &832455100
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +604,9 @@ MonoBehaviour:
   Galette: 0
   Fromage: 0
   Frite: 0
+  Burger: 0
+  Wrap: 0
+  OctaB: 0
 --- !u!61 &832455104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -845,7 +851,9 @@ MonoBehaviour:
   Bas: 1
   Haut: 0
   Comptoir: 0
+  Frigo: 0
   CraftPanel: {fileID: 0}
+  FrigoPanel: {fileID: 0}
 --- !u!61 &1001052013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -940,7 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f45db41a4dba734dbbc3fce942ca567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  perspectiveScale: 1.3
+  perspectiveScale: 1.1
   scaleRatio: 0.05
   spriteRenderer: {fileID: 2076594667}
   isZ: 0
@@ -1026,8 +1034,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305193649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.94, y: -1.8333501, z: -1.3075107}
-  m_LocalScale: {x: 2.448355, y: 2.448355, z: 1}
+  m_LocalPosition: {x: 1.8553233, y: -3.67, z: -2.3331072}
+  m_LocalScale: {x: 3.9859698, y: 3.9859698, z: 0.88586}
   m_Children:
   - {fileID: 2076594666}
   - {fileID: 1919181748}
@@ -1642,7 +1650,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -2324210604057961781, guid: b410385ab6328de41aaeb4d20654f62d, type: 3}
+  m_Sprite: {fileID: 8739673881203367251, guid: 8f07db4ae185fd24fb09ee5fec71a5d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

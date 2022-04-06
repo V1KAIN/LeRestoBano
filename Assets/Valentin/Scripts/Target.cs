@@ -14,8 +14,6 @@ public class Target : MonoBehaviour
     public static bool isInMenu;
     
     public Animator animator;
-
-    public Rigidbody2D rb;
     void Start()
     {
         followSpot = transform.position;
@@ -26,7 +24,6 @@ public class Target : MonoBehaviour
 
     void Update()
     {
-        animator.SetFloat("Speed", rb.velocity.magnitude);
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetMouseButtonDown(0) && !isZ && !isInMenu)
         {
@@ -39,6 +36,19 @@ public class Target : MonoBehaviour
         agent.SetDestination(new Vector3(followSpot.x, followSpot.y, transform.position.z));
         AdjustPerspective();
         AdjustSortingLayer();
+        UpdateAnimation();
+    }
+
+    private void UpdateAnimation()
+    {
+        float distance = Vector2.Distance(transform.position, followSpot);
+        animator.SetFloat("distance", distance);
+        if (distance > 0.01)
+        {
+            Vector3 direction = transform.position - new Vector3(followSpot.x, followSpot.y, transform.position.z);
+            float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+            animator.SetFloat("angle", angle);
+        }
     }
 
     private void OnCollisionStay2D(Collision2D other)
