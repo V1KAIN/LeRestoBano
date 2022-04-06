@@ -334,6 +334,8 @@ MonoBehaviour:
   InvisibleAtStart: 0
   NextUI: {fileID: 2002194981}
   ClickAgainToCloseNextUI: 1
+  CloseMultipleUI: 0
+  MultipleUI: []
 --- !u!65 &1947588518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -445,6 +447,8 @@ MonoBehaviour:
   InvisibleAtStart: 1
   NextUI: {fileID: 0}
   ClickAgainToCloseNextUI: 0
+  CloseMultipleUI: 0
+  MultipleUI: []
 --- !u!65 &2002194983
 BoxCollider:
   m_ObjectHideFlags: 0
