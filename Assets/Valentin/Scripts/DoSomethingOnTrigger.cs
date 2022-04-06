@@ -8,9 +8,10 @@ public class DoSomethingOnTrigger : MonoBehaviour
     public Animator animator;
 
     public bool Bas, Haut;
-    public bool Comptoir;
+    public bool Comptoir, Frigo;
 
     public GameObject CraftPanel;
+    public GameObject FrigoPanel;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Tête") && Bas)
@@ -26,6 +27,11 @@ public class DoSomethingOnTrigger : MonoBehaviour
         if (other.CompareTag("Pied") && Comptoir)
         {
             CraftPanel.SetActive(true);
+            Target.isInMenu = true;
+        }    
+        if (other.CompareTag("Pied") && Frigo)
+        {
+            FrigoPanel.SetActive(true);
             Target.isInMenu = true;
         }    
     }
