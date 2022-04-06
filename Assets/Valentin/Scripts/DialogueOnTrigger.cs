@@ -7,20 +7,39 @@ public class DialogueOnTrigger : MonoBehaviour
 {
     public bool Benjamin;
     public GameObject Benjamin1, Benjamin2, Benjamin3;
+    public bool Richard;
+    public GameObject Richard1, Richard2, Richard3;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //benj
         if (other.CompareTag("Pied") && Benjamin)
         {
             GetComponent<DialogueTrigger>().StartDialogue();
-            Benjamin1.SetActive(false);
+            Destroy(Benjamin1);
             Benjamin2.SetActive(true);
         }
         
         if (other.CompareTag("Tête") && Benjamin && InventoryScript.Burger == true)
         {
             InventoryScript.Burger = false;
-            Benjamin2.SetActive(false);
+            Destroy(Benjamin2);
             Benjamin3.SetActive(true);
+        }
+        
+        //Rich
+        if (other.CompareTag("Pied") && Richard)
+        {
+            GetComponent<DialogueTrigger>().StartDialogue();
+            Destroy(Richard1);
+            Richard2.SetActive(true);
+        }
+        
+        if (other.CompareTag("Tête") && Benjamin && InventoryScript.Burger == true)
+        {
+            InventoryScript.Burger = false;
+            Destroy(Richard2);
+            Richard3.SetActive(true);
         }
     }
 }

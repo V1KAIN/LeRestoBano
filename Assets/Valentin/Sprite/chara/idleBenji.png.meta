@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 616282f8a8170034e9b142edaf073040
+guid: 69cf96250b7355045a0109b43ebc4c30
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5570938858464805947
-    second: perso2Anim 1_0
+      213: 8857745656393952906
+    second: idleBenji_0
   - first:
-      213: -5511710912560360815
-    second: perso2Anim 1_2
+      213: 1796216961223697272
+    second: idleBenji_1
   - first:
-      213: -1817933107400536177
-    second: perso2Anim 1_3
+      213: -252252972521897560
+    second: idleBenji_2
   - first:
-      213: 2316014547964680625
-    second: perso2Anim 1_5
+      213: 513754965385983551
+    second: idleBenji_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: perso2Anim 1_0
+      name: idleBenji_0
       rect:
         serializedVersion: 2
         x: 686
@@ -117,35 +117,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b34073c2063ff4d40800000000000000
-      internalID: 5570938858464805947
+      spriteID: a8eee108eb80dea70800000000000000
+      internalID: 8857745656393952906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: perso2Anim 1_2
+      name: idleBenji_1
       rect:
         serializedVersion: 2
         x: 1391
         y: 473
-        width: 675
-        height: 1601
+        width: 689
+        height: 1625
       alignment: 9
-      pivot: {x: 0.43603352, y: 0.00035027546}
+      pivot: {x: 0.42467624, y: 0.00038018328}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 192123890287283b0800000000000000
-      internalID: -5511710912560360815
+      spriteID: 87325493fc17de810800000000000000
+      internalID: 1796216961223697272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: perso2Anim 1_3
+      name: idleBenji_2
       rect:
         serializedVersion: 2
         x: 2180
@@ -159,29 +159,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8f08fb787765c6e0800000000000000
-      internalID: -1817933107400536177
+      spriteID: 8a1cb4b0241df7cf0800000000000000
+      internalID: -252252972521897560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: perso2Anim 1_5
+      name: idleBenji_3
       rect:
         serializedVersion: 2
-        x: 2832
+        x: 2835
         y: 473
-        width: 676
+        width: 687
         height: 1599
       alignment: 9
-      pivot: {x: 0.5573994, y: -0.000000019085414}
+      pivot: {x: 0.52998453, y: -0.00042257016}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b9521ae5f2242020800000000000000
-      internalID: 2316014547964680625
+      spriteID: f36bc654b69312700800000000000000
+      internalID: 513754965385983551
       vertices: []
       indices: 
       edges: []
@@ -189,7 +189,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 96bc53a167a2fb64a842d2f7227b72d1
+    spriteID: 4608137e692c4ce4eaee6e3d48f4e45e
     internalID: 0
     vertices: []
     indices: 
