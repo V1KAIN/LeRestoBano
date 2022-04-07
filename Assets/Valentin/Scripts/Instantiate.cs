@@ -8,6 +8,7 @@ public class Instantiate : MonoBehaviour
 
     public void OnClick()
     {
-        Instantiate(Ui );
+        GameObject go = Instantiate(Ui,transform);
+        //go.transform.SetParent(gameObject.transform);
     }
 }

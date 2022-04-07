@@ -74,7 +74,7 @@ public class Object : MonoBehaviour
         if (other.CompareTag("Torse") && OctaB)
         {
             InventoryScript.OctaB = true;
-            other.GetComponentInParent<PopUpTextScript>().SpawnText("octoburger");
+            other.GetComponentInParent<PopUpTextScript>().SpawnText("menu octomachin");
             Destroy(gameObject);
         }
         if (other.CompareTag("Torse") && NonBurger)

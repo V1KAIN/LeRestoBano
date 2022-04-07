@@ -366,14 +366,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: Je veut ca
+    Message: "Je veut un menu OctoCheeseBaconSupraSauceMayoKetchupBurger, et plus
+      vite que \xE7a !"
   - ActorId: 0
-    Message: ok
+    Message: Ok.
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
   - Name: Boss
-    Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
+    Sprite: {fileID: 21300000, guid: 72e15a102cc963942aefc3bc070fe573, type: 3}
 --- !u!114 &224613200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,7 +416,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.3416667, y: 6.5}
+    oldSize: {x: 3.0583334, y: 7.675}
     newSize: {x: 1.124, y: 3.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -434,7 +435,7 @@ Animator:
   m_GameObject: {fileID: 224613198}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a5c6d164028202e4e82fae8a0f6b0af6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -483,8 +484,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5129
-  m_Sprite: {fileID: -9037341631002443963, guid: 84d0f612d2aa4074d9208a87a3f05a5c, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 5103132983513316382, guid: c82ad525cdce7f34d8039a3ef18a8065, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -712,11 +713,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: Oui bjr, je voudrais un cheese burger, mais sans le formage svp
+    Message: "Oui bonjour, je voudrais un cheese burger, mais sans le fromage s'il
+      vous pla\xEEt."
   - ActorId: 0
     Message: Vous voulez dire un burger ?
   - ActorId: 1
-    Message: Nan, un cheeseburger sans fromage, du pain, du steak, et paf !
+    Message: Non, un cheese burger sans fromage, du pain, du steak, et paf !
   - ActorId: 0
     Message: Ok.
   Actors:
@@ -1009,7 +1011,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.3416667, y: 6.5}
+    oldSize: {x: 3.0583334, y: 7.675}
     newSize: {x: 1.124, y: 3.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1077,8 +1079,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5129
-  m_Sprite: {fileID: -9037341631002443963, guid: 84d0f612d2aa4074d9208a87a3f05a5c, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 5103132983513316382, guid: c82ad525cdce7f34d8039a3ef18a8065, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1665,15 +1667,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogue:
-  - ActorId: 1
-    Message: alors ca avance ?
   - ActorId: 0
-    Message: nan
+    Message: "Un OctoQuoi d\xE9j\xE0 ?"
+  - ActorId: 1
+    Message: "Ecoute moi bien mon con, tu vas me chercher une putain de frite et
+      me l'accompagn\xE9 d'un burger, constituer de pain, mayo, ketchup, bacon, fromage,
+      et de 8 steaks !"
+  - ActorId: 0
+    Message: "Oui bien sur, je le savais, \xE7a arrive tout de suite."
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
   - Name: Boss
-    Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
+    Sprite: {fileID: 21300000, guid: 72e15a102cc963942aefc3bc070fe573, type: 3}
 --- !u!114 &1376180165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1715,7 +1721,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.3416667, y: 6.5}
+    oldSize: {x: 3.0583334, y: 7.675}
     newSize: {x: 1.124, y: 3.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1783,8 +1789,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5129
-  m_Sprite: {fileID: -9037341631002443963, guid: 84d0f612d2aa4074d9208a87a3f05a5c, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 5103132983513316382, guid: c82ad525cdce7f34d8039a3ef18a8065, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1845,17 +1851,16 @@ MonoBehaviour:
   - ActorId: 1
     Message: Alors mon ami, cette galette ?
   - ActorId: 0
-    Message: "Il \xE9tait \xE0 quoi d\xE9j\xE0 ton wrap ?"
-  - ActorId: 0
-    Message: En language normal s'teu plait.
+    Message: "Il \xE9tait \xE0 quoi d\xE9j\xE0 ton wrap ? En langage normal s'il
+      te pla\xEEt."
   - ActorId: 1
-    Message: Il me semble que en language gueux ca ce dit "Wrap poulet mayo"
+    Message: "Il me semble que en langage gueux \xE7a se dit \"Wrap poulet mayo\""
   - ActorId: 0
-    Message: A oui, j'y retourne.
+    Message: Ah oui, j'y retourne.
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
-  - Name: Riichard
+  - Name: Richard
     Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
 --- !u!114 &1399463443
 MonoBehaviour:
@@ -2026,17 +2031,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: Alors il avance le cheeseburger sans cheese ?
+    Message: Alors il avance le cheese burger sans fromage ?
   - ActorId: 0
     Message: Nan, en fait j'ai pas retenu la recette...
   - ActorId: 1
     Message: ...
   - ActorId: 0
-    Message: ....
+    Message: ...
   - ActorId: 1
     Message: Bah du pain et un steak quoi...
   - ActorId: 0
-    Message: ok.
+    Message: Ok.
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
@@ -2321,28 +2326,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: "Mais salutations les plus distingu\xE9 mon cher gueux !"
+    Message: "Mes salutations les plus distingu\xE9es mon cher gueux !"
   - ActorId: 0
-    Message: Salut gros.
+    Message: Bonjour ?
   - ActorId: 1
-    Message: "Auriez-vous l'aimabilit\xE9 de me pr\xE9par\xE9 une petite collation
+    Message: "Auriez-vous l'aimabilit\xE9 de me pr\xE9parer une petite collation
       ?"
   - ActorId: 0
     Message: C'est mon job.
   - ActorId: 1
-    Message: "Alors, il me faudrais une galette de ma\xEEs sans gluten, accompagn\xE9
-      de son poulet fermier bio \xE9lev\xE9 en pleine air, sur son coulis de sauce
+    Message: "Alors, il me faudrait une galette de ma\xEEs sans gluten, accompagn\xE9e
+      de son poulet fermier bio \xE9lev\xE9 en plein air, sur son coulis de sauce
       d'oeuf et de moutarde."
   - ActorId: 0
     Message: Un wrap poulet mayo donc ?
   - ActorId: 1
     Message: "Tout \xE0 fait tr\xE8s cher."
   - ActorId: 0
-    Message: Ok, c'est ti'par
+    Message: Ok, c'est parti.
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
-  - Name: Riichard
+  - Name: Richard
     Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
 --- !u!114 &1414510212
 MonoBehaviour:
@@ -2567,13 +2572,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: Mille merci mon ami !
+    Message: Mille mercis mon ami !
   - ActorId: 0
-    Message: pa'd'souc
+    Message: "Pas de soucis, bon app\xE9tit."
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
-  - Name: Riichard
+  - Name: Richard
     Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
 --- !u!114 &1572913284
 MonoBehaviour:
@@ -3219,7 +3224,7 @@ MonoBehaviour:
   - ActorId: 1
     Message: Merci !
   - ActorId: 0
-    Message: pa'd'souc
+    Message: "Pas de soucis, bon app\xE9tit."
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
