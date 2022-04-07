@@ -2,7 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
-{
+{ 
+   [SerializeField] Animator transitionAnimator;
+   
    public void QuitGame()
    {
 #if UNITY_EDITOR
@@ -16,6 +18,12 @@ public class MainMenuManager : MonoBehaviour
    }
 
    public void LaunchGame()
+   {
+      transitionAnimator.SetTrigger("go");
+      Invoke(nameof(LGInvoke), .5f);
+   }
+
+   private void LGInvoke()
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
    }

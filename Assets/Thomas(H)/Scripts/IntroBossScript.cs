@@ -9,6 +9,10 @@ public class IntroBossScript : MonoBehaviour
     private bool hasAlreadyTalked;
 
     public Animator transitionAnimator;
+    
+    public enum IOSceneState { Intro, Outro }
+
+    public IOSceneState IOState; 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -37,6 +41,14 @@ public class IntroBossScript : MonoBehaviour
 
     void LoadNext()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        switch (IOState)
+        {
+            case IOSceneState.Intro: MainMenuManager.LoadNextScene();
+                break;
+            case IOSceneState.Outro: MainMenuManager.LoadSceneAtIndex(6);
+                break;
+        }
+        
+        
     }
 }

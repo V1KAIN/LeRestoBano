@@ -605,19 +605,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: "H\xE9 toi, viens voir!"
+    Message: 'Tu croyais que je rigolais quand je te disais de faire attention petit
+      con ? '
   - ActorId: 0
-    Message: Oui ?
+    Message: 'Hein ? '
   - ActorId: 1
-    Message: "On a re\xE7u de mauvais avis sur internet sur la qualit\xE9 du service
-      du restaurant, alors fait attention et demande au client de mettre de bon avis
-      sur goglee!"
+    Message: Tu fais le malin en plus
   - ActorId: 0
-    Message: Ah ouais cool.
+    Message: Hein
   - ActorId: 1
-    Message: Attention tu risques de perdre ton boulot, alors VAS TRAVAILLER!
-  - ActorId: 0
-    Message: ok...
+    Message: "T\u2019EST VIRER! D\xC9GAGE!"
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
@@ -638,6 +635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnimator: {fileID: 331113015}
+  IOState: 1
 --- !u!61 &559311412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -674,7 +672,7 @@ Animator:
   m_GameObject: {fileID: 559311409}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b07f1b0281c744f4dbb66e4aab3634a9, type: 2}
+  m_Controller: {fileID: 9100000, guid: f20b0b998272d0b48bb2116d37aa9bf8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
