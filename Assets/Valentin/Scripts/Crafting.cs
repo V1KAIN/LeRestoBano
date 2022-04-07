@@ -23,10 +23,11 @@ public class Crafting : MonoBehaviour
             Octaburger1.SetActive(true);
             Octaburger2.SetActive(true);
         } 
-        else if (InventoryScript.Galette >= 1 && InventoryScript.Poulet >= 1)
+        else if (InventoryScript.Galette >= 1 && InventoryScript.Poulet >= 1 && InventoryScript.Mayo >= 1)
         {
             InventoryScript.Galette -= 1;
             InventoryScript.Poulet -= 1;
+            InventoryScript.Mayo -= 1;
             Wrap1.SetActive(true);
             Wrap2.SetActive(true);
         }

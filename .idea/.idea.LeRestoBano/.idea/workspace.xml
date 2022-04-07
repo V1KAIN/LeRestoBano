@@ -15,6 +15,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/InventoryScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/DialogueOnTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/Crafting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Valentin/Scripts/RotateScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,7 +76,8 @@
       <updated>1649065276276</updated>
       <workItem from="1649065297868" duration="7866000" />
       <workItem from="1649144160151" duration="5243000" />
-      <workItem from="1649229749552" duration="11892000" />
+      <workItem from="1649229749552" duration="17539000" />
+      <workItem from="1649315313806" duration="2718000" />
     </task>
     <servers />
   </component>
