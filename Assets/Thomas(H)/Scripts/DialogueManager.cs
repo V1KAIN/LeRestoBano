@@ -13,8 +13,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject DialogueContentHolder;
 
     [Header("Parameters")]
-    [SerializeField] KeyCode NextMessageKey = KeyCode.Space;
-    [SerializeField] KeyCode PreviousMessageKey = KeyCode.Backspace;
     [SerializeField] private bool CanGoBackMessages = true;
     [SerializeField] private float typingSpeed = 0.04f;
     
