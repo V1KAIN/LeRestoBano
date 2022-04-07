@@ -102,6 +102,9 @@ public class DialogueManager : MonoBehaviour
         Actor actorToDisplay = _currentActors[dialogueToDisplay.ActorId];
         actorName.text = actorToDisplay.Name;
         actorImage.sprite = actorToDisplay.Sprite;
+
+        string sound = actorToDisplay.Sound;
+        FindObjectOfType<AudioManager>().PitchAlea(sound);
     }
 
 

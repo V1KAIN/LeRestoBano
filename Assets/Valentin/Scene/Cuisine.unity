@@ -707,6 +707,8 @@ MonoBehaviour:
   Haut: 0
   Comptoir: 0
   Frigo: 1
+  ChangeM1: 0
+  ChangeM2: 0
   CraftPanel: {fileID: 1254934153}
   FrigoPanel: {fileID: 2002178679}
 --- !u!61 &451621893
@@ -1117,6 +1119,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 852719239}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &633143468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1273,6 +1287,8 @@ MonoBehaviour:
   Haut: 1
   Comptoir: 0
   Frigo: 0
+  ChangeM1: 0
+  ChangeM2: 1
   CraftPanel: {fileID: 0}
   FrigoPanel: {fileID: 0}
 --- !u!61 &659463358
@@ -3605,6 +3621,8 @@ MonoBehaviour:
   Haut: 0
   Comptoir: 1
   Frigo: 0
+  ChangeM1: 0
+  ChangeM2: 0
   CraftPanel: {fileID: 1254934153}
   FrigoPanel: {fileID: 0}
 --- !u!61 &1445857455
@@ -4042,6 +4060,8 @@ MonoBehaviour:
   Haut: 0
   Comptoir: 0
   Frigo: 0
+  ChangeM1: 0
+  ChangeM2: 0
   CraftPanel: {fileID: 0}
   FrigoPanel: {fileID: 0}
 --- !u!61 &1837055150

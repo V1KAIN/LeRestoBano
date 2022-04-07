@@ -23,6 +23,7 @@ public class Actor
 {
    public string Name;
    public Sprite Sprite;
+   public string Sound;
 }
 
 

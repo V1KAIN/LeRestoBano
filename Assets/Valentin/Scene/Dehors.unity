@@ -501,6 +501,7 @@ MonoBehaviour:
   Wrap: 0
   OctaB: 0
   NonBurger: 0
+  CheeseBurger: 0
 --- !u!114 &678490797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,8 +526,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Clodo
     Sprite: {fileID: 21300000, guid: 2cfe6b07cba09aa4a86016ffad1258ed, type: 3}
+    Sound: Clodo
 --- !u!224 &679219267 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5592411532405117219, guid: f1b98a2b7fb110846bdbe8be1f9075f1, type: 3}
@@ -642,6 +645,7 @@ MonoBehaviour:
   Wrap: 0
   OctaB: 0
   NonBurger: 0
+  CheeseBurger: 0
 --- !u!61 &832455104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -688,8 +692,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Clodo
     Sprite: {fileID: 21300000, guid: 2cfe6b07cba09aa4a86016ffad1258ed, type: 3}
+    Sound: Clodo
 --- !u!1 &975854165
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +918,8 @@ MonoBehaviour:
   Haut: 0
   Comptoir: 0
   Frigo: 0
+  ChangeM1: 1
+  ChangeM2: 0
   CraftPanel: {fileID: 0}
   FrigoPanel: {fileID: 0}
 --- !u!61 &1001052013
@@ -1268,8 +1276,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: 
   - Name: Clodo
     Sprite: {fileID: 21300000, guid: 2cfe6b07cba09aa4a86016ffad1258ed, type: 3}
+    Sound: 
 --- !u!114 &1243412214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1290,6 +1300,10 @@ MonoBehaviour:
   Richard1: {fileID: 0}
   Richard2: {fileID: 0}
   Richard3: {fileID: 0}
+  Boss: 0
+  Boss1: {fileID: 0}
+  Boss2: {fileID: 0}
+  Boss3: {fileID: 0}
 --- !u!1 &1305193649
 GameObject:
   m_ObjectHideFlags: 0
