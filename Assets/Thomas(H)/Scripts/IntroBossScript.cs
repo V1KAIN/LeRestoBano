@@ -8,6 +8,9 @@ public class IntroBossScript : MonoBehaviour
     private bool hasAlreadyTalked;
 
     public Animator transitionAnimator;
+
+    enum State { Intro, Outro } 
+    [SerializeField]State SceneState;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -31,6 +34,16 @@ public class IntroBossScript : MonoBehaviour
 
     void LoadNext()
     {
-        MainMenuManager.LoadNextScene();
+        switch (SceneState)
+        {
+            case State.Intro:
+                MainMenuManager.LoadNextScene();        
+                break;
+            case State.Outro:
+                MainMenuManager.LoadSceneAtIndex(0);
+                break;
+        }
+        
+        
     }
 }
