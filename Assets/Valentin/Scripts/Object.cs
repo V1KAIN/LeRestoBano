@@ -22,12 +22,14 @@ public class Object : MonoBehaviour
     {
         if (other.CompareTag("Pied") && Poulet)
         {
+            GetComponent<DialogueTrigger>().StartDialogue();
             InventoryScript.Poulet += 1;
             other.GetComponentInParent<PopUpTextScript>().SpawnText("poulet");
             Destroy(gameObject);
         }
         if (other.CompareTag("Pied") && Bacon)
         {
+            GetComponent<DialogueTrigger>().StartDialogue();
             InventoryScript.Bacon += 1;
             other.GetComponentInParent<PopUpTextScript>().SpawnText("bacon");
             Destroy(gameObject);
