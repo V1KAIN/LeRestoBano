@@ -20,7 +20,7 @@ public class MainMenuManager : MonoBehaviour
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
    }
 
-   public void LoadSceneAtIndex(int index)
+   public static void LoadSceneAtIndex(int index)
    {
       SceneManager.LoadScene(index);
    }
