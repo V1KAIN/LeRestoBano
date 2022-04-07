@@ -27,19 +27,14 @@ public class Target : MonoBehaviour
     void Update()
     {
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Debug.Log(isInMenu);
 
-        if (isInMenu)
-        {
-            followSpot = transform.position;
-            return;
-        }
+        if (isInMenu) followSpot = transform.position;
         
-        if (Input.GetMouseButtonDown(0) && !isZ)
+        if (Input.GetMouseButtonDown(0) && !isZ && !isInMenu)
         {
             followSpot = new Vector2(mousePosition.x, mousePosition.y);
         }
-        if (Input.GetMouseButtonDown(0) && isZ)
+        if (Input.GetMouseButtonDown(0) && isZ && !isInMenu)
         {
             followSpot = new Vector2(mousePosition.x, transform.position.y);
         }
