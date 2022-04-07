@@ -8,13 +8,12 @@ public class RetourMenu : MonoBehaviour
 
     public void PanelGo()
     {
-        Target.isInMenu = true;
         Panel.SetActive(true);
-
+        Target.isInMenu = true;
     }
     public void Non()
     {
-        Target.isInMenu = false;
+        //Target.isInMenu = false;
         Panel.SetActive(false);
     }
     public void Oui()
@@ -25,7 +24,8 @@ public class RetourMenu : MonoBehaviour
 
     private void GoMenu()
     {
-        Target.isInMenu = false;
+        
         SceneManager.LoadScene("MainMenu");
     }
+    
 }
