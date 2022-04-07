@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Crafting : MonoBehaviour
 {
@@ -9,6 +9,21 @@ public class Crafting : MonoBehaviour
     public GameObject Octaburger1, Octaburger2 ;
     public GameObject Nonburger1, Nonburger2 ;
     public GameObject CheeseBurger1, CheeseBurger2;
+
+    public Text Pain, Galette, Viande, Poulet, Bacon, Fromage, Ketchup, Mayo, Frite;
+
+    private void Update()
+    {
+        Pain.text = InventoryScript.Pain.ToString();
+        Galette.text = InventoryScript.Galette.ToString();
+        Viande.text = InventoryScript.Steak.ToString();
+        Poulet.text = InventoryScript.Poulet.ToString();
+        Bacon.text = InventoryScript.Bacon.ToString();
+        Fromage.text = InventoryScript.Fromage.ToString();
+        Ketchup.text = InventoryScript.Ketchup.ToString();
+        Mayo.text = InventoryScript.Mayo.ToString();
+        Frite.text = InventoryScript.Frite.ToString();
+    }
 
     public void Craft()
     {

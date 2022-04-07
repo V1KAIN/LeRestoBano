@@ -17,4 +17,23 @@ public class InventoryScript : MonoBehaviour
     public static bool OctaB = false;
     public static bool NonBurger = false;
     public static bool CheeseBurger = false;
+
+    public static void ResetInventory()
+    {
+        Ketchup = 0;
+        Mayo = 0;
+        Steak = 0;
+        Bacon = 0;
+        Poulet = 0;
+        Pain = 0;
+        Galette = 0;
+        Fromage = 0;
+        Frite = 0;
+
+        Burger = false;
+        Wrap = false;
+        OctaB = false;
+        NonBurger = false;
+        CheeseBurger = false;
+    }
 }

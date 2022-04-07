@@ -1,3 +1,4 @@
+using System;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
@@ -6,11 +7,15 @@ public class RetourMenu : MonoBehaviour
     public Animator animator;
     public GameObject Panel;
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Tête")) PanelGo();
+    }
+
     public void PanelGo()
     {
-        Target.isInMenu = true;
         Panel.SetActive(true);
-
+        Target.isInMenu = true;
     }
     public void Non()
     {
@@ -25,7 +30,8 @@ public class RetourMenu : MonoBehaviour
 
     private void GoMenu()
     {
-        Target.isInMenu = false;
+        InventoryScript.ResetInventory();
         SceneManager.LoadScene("MainMenu");
     }
+    
 }

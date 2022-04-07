@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.AI;
 public class Target : MonoBehaviour
@@ -26,6 +27,9 @@ public class Target : MonoBehaviour
     void Update()
     {
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (isInMenu) followSpot = transform.position;
+        
         if (Input.GetMouseButtonDown(0) && !isZ && !isInMenu)
         {
             followSpot = new Vector2(mousePosition.x, mousePosition.y);
@@ -39,7 +43,7 @@ public class Target : MonoBehaviour
         AdjustSortingLayer();
         UpdateAnimation();
 
-        if (isInMenu) followSpot = transform.position;
+       
     }
 
     private void UpdateAnimation()
