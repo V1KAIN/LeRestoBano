@@ -312,7 +312,6 @@ Transform:
   m_Children:
   - {fileID: 949191206}
   - {fileID: 1045802592}
-  - {fileID: 1840987462}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -414,7 +413,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.36417258, y: 5.751663}
+  m_Offset: {x: -3.1242175, y: 5.751663}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -425,7 +424,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.0858393, y: 11.503326}
+  m_Size: {x: 1.5657492, y: 11.503326}
   m_EdgeRadius: 0
 --- !u!95 &224613202
 Animator:
@@ -1005,6 +1004,18 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Boss
     clip: {fileID: 8300000, guid: e77ddfcedd9d7d04699cb925ca320427, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Cedric
+    clip: {fileID: 8300000, guid: b057067e05ff4064086afce47cf63ded, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Richard
+    clip: {fileID: 8300000, guid: b780ecb95cce9ba4b9906df5b54047f4, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -1812,7 +1823,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.9216652, y: 5.751663}
+  m_Offset: {x: -0.41542315, y: 5.751663}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -1823,7 +1834,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.514164, y: 11.503326}
+  m_Size: {x: 2.0853248, y: 11.503326}
   m_EdgeRadius: 0
 --- !u!95 &1376180167
 Animator:
@@ -1835,7 +1846,7 @@ Animator:
   m_GameObject: {fileID: 1376180163}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 706b3605ffbfedf42bca23462a210235, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1996,7 +2007,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.9216652, y: 5.751663}
+  m_Offset: {x: 0.038450956, y: 5.751663}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -2007,7 +2018,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.514164, y: 11.503326}
+  m_Size: {x: 0.88317156, y: 11.503326}
   m_EdgeRadius: 0
 --- !u!95 &1399463445
 Animator:
@@ -2131,9 +2142,9 @@ MonoBehaviour:
     Message: Alors il avance le cheese burger sans fromage ?
   - ActorId: 0
     Message: Nan, en fait j'ai pas retenu la recette...
-  - ActorId: 1
+  - ActorId: 3
     Message: ...
-  - ActorId: 0
+  - ActorId: 2
     Message: ...
   - ActorId: 1
     Message: Bah du pain et un steak quoi...
@@ -2146,6 +2157,12 @@ MonoBehaviour:
   - Name: Benjamin
     Sprite: {fileID: 21300000, guid: f78cf10ffb68e70438bcdca01f628d9e, type: 3}
     Sound: Benjamin
+  - Name: "C\xE9dric"
+    Sprite: {fileID: 21300000, guid: f78cf10ffb68e70438bcdca01f628d9e, type: 3}
+    Sound: 
+  - Name: Benjamin
+    Sprite: {fileID: 21300000, guid: f78cf10ffb68e70438bcdca01f628d9e, type: 3}
+    Sound: 
 --- !u!114 &1407982167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2183,7 +2200,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32681534, y: 2.2717552}
+  m_Offset: {x: 0.3852939, y: 2.2717552}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -2194,7 +2211,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9180913, y: 4.5435104}
+  m_Size: {x: 1.8011342, y: 4.5435104}
   m_EdgeRadius: 0
 --- !u!212 &1407982169
 SpriteRenderer:
@@ -2398,7 +2415,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.4608326, y: 5.751663}
+  m_Offset: {x: -1.8576052, y: 5.751663}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -2409,7 +2426,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.435829, y: 11.503326}
+  m_Size: {x: 0.79895353, y: 11.503326}
   m_EdgeRadius: 0
 --- !u!114 &1414510211
 MonoBehaviour:
@@ -3167,63 +3184,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5592411532405117219, guid: f1b98a2b7fb110846bdbe8be1f9075f1, type: 3}
   m_PrefabInstance: {fileID: 1811489195}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1840987461
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1840987462}
-  - component: {fileID: 1840987463}
-  m_Layer: 0
-  m_Name: collid
-  m_TagString: Pied
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1840987462
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840987461}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.606, z: 0}
-  m_LocalScale: {x: 0.18753, y: 0.18753, z: 0.18753}
-  m_Children: []
-  m_Father: {fileID: 197614937}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1840987463
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840987461}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.02461645, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.45843738, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1918725244
 GameObject:
   m_ObjectHideFlags: 0
