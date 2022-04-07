@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Thomas(H)/Scene/MainMenu.unity
+    guid: 7de5aca20a298c54fafa4d83081abdc6
+  - enabled: 1
+    path: Assets/Valentin/Scene/Comptoir.unity
+    guid: 0bcde0b76c1a2ec4283bc3850f253394
+  - enabled: 1
+    path: Assets/Valentin/Scene/Cuisine.unity
+    guid: 5e3633477bb5e86499812d388fcbb660
+  - enabled: 1
+    path: Assets/Valentin/Scene/Dehors.unity
+    guid: b960a0b24b406be4dba9de48080277ca
   m_configObjects: {}
