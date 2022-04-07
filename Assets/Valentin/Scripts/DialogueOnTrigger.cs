@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class DialogueOnTrigger : MonoBehaviour
 {
+    public static bool Ben ;
+    
     public bool Benjamin;
     public GameObject Benjamin1, Benjamin2, Benjamin3;
     public bool Richard;
@@ -18,6 +20,7 @@ public class DialogueOnTrigger : MonoBehaviour
             GetComponent<DialogueTrigger>().StartDialogue();
             Destroy(Benjamin1);
             Benjamin2.SetActive(true);
+            Ben = true;
         }
         
         if (other.CompareTag("Tête") && Benjamin && InventoryScript.Burger == true)
@@ -35,11 +38,20 @@ public class DialogueOnTrigger : MonoBehaviour
             Richard2.SetActive(true);
         }
         
-        if (other.CompareTag("Tête") && Benjamin && InventoryScript.Burger == true)
+        if (other.CompareTag("Tête") && Richard && InventoryScript.Wrap == true)
         {
-            InventoryScript.Burger = false;
+            InventoryScript.Wrap = false;
             Destroy(Richard2);
             Richard3.SetActive(true);
         }
+    }
+
+    private void Start()
+    {
+        if (Ben)
+        {
+            Benjamin1.SetActive(false);
+            Benjamin2.SetActive(true);
+        } 
     }
 }
