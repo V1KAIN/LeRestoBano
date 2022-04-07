@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 36252952}
   - component: {fileID: 36252951}
   - component: {fileID: 36252950}
-  - component: {fileID: 36252949}
   - component: {fileID: 36252955}
   m_Layer: 0
   m_Name: Player
@@ -145,21 +144,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &36252949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36252948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 341926aef01b53a469337f0d080ad2e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textPrefab: {fileID: 5323469936704674189, guid: c2b7ecf16bb7cc042a6fb80b1cc6f151, type: 3}
-  textAnimation: {fileID: 7400000, guid: 291ec7d8959d2a7419c33c4b6142f471, type: 2}
-  spawnHeight: 4.5
 --- !u!195 &36252950
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -627,8 +611,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Boss
-    Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
+    Sprite: {fileID: 21300000, guid: 6ebaefddec3dd9c419f261e3c79c50c7, type: 3}
+    Sound: Boss
 --- !u!114 &559311411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,7 +645,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.3416667, y: 6.5}
+    oldSize: {x: 2.9583333, y: 7.675}
     newSize: {x: 1.124, y: 3.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -678,7 +664,7 @@ Animator:
   m_GameObject: {fileID: 559311409}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a5c6d164028202e4e82fae8a0f6b0af6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -727,7 +713,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5129
-  m_Sprite: {fileID: -9037341631002443963, guid: 84d0f612d2aa4074d9208a87a3f05a5c, type: 3}
+  m_Sprite: {fileID: 4941559844026697511, guid: 1d8480373ec6b7c40b23aaa77d9a31b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1301,6 +1287,104 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.45843738, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1725654443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1725654445}
+  - component: {fileID: 1725654444}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1725654444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725654443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1efb18fd879f69147b96324975f235d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Menu
+    clip: {fileID: 8300000, guid: 81580a09e919a7a47bd7a91b70e29e9c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 95adc13cefba659448efb3dc7084fce5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Exterieur
+    clip: {fileID: 8300000, guid: 56eb57d8957fe3646912b58ab1840e50, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Plus
+    clip: {fileID: 8300000, guid: d044eeec6e64e3f4d963513b2eda10be, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Benjamin
+    clip: {fileID: 8300000, guid: 26d2ea1c51bc19344888db0e660fa427, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Clodo
+    clip: {fileID: 8300000, guid: 05e273162efea60409d5dd377f14fc98, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss
+    clip: {fileID: 8300000, guid: e77ddfcedd9d7d04699cb925ca320427, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Cedric
+    clip: {fileID: 8300000, guid: b057067e05ff4064086afce47cf63ded, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Richard
+    clip: {fileID: 8300000, guid: b780ecb95cce9ba4b9906df5b54047f4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &1725654445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725654443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0818722, y: -1.7096363, z: -2.4951663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1766813729
 GameObject:
   m_ObjectHideFlags: 0
