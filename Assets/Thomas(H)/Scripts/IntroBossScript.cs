@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IntroBossScript : MonoBehaviour
 {
@@ -9,9 +10,6 @@ public class IntroBossScript : MonoBehaviour
 
     public Animator transitionAnimator;
 
-    enum State { Intro, Outro } 
-    [SerializeField]State SceneState;
-    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Pied") || other.CompareTag("Tête"))
@@ -21,10 +19,15 @@ public class IntroBossScript : MonoBehaviour
         }
     }
 
+    private GameObject dm;
+
+    private void Start()
+    {
+        dm = FindObjectOfType<DialogueManager>().gameObject;
+    }
+
     private void Update()
     {
-        GameObject dm = FindObjectOfType<DialogueManager>().gameObject;
-        
         if (hasAlreadyTalked && dm.GetComponent<DialogueManager>().CurrentDialogueState() == false)
         {
             transitionAnimator.SetTrigger("go");
@@ -34,16 +37,6 @@ public class IntroBossScript : MonoBehaviour
 
     void LoadNext()
     {
-        switch (SceneState)
-        {
-            case State.Intro:
-                MainMenuManager.LoadNextScene();        
-                break;
-            case State.Outro:
-                MainMenuManager.LoadSceneAtIndex(0);
-                break;
-        }
-        
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
