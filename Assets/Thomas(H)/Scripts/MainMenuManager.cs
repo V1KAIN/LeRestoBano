@@ -24,4 +24,9 @@ public class MainMenuManager : MonoBehaviour
    {
       SceneManager.LoadScene(index);
    }
+   
+   public static void LoadNextScene()
+   {
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+   }
 }

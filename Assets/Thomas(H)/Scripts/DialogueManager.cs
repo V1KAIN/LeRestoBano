@@ -125,4 +125,9 @@ public class DialogueManager : MonoBehaviour
         DialogueBoxAnimator.SetBool("GoOut",false);
         DialogueBoxAnimator.SetBool("GoIn",false);
     }
+
+    public bool CurrentDialogueState()
+    {
+        return _isInDialogue;
+    }
 }

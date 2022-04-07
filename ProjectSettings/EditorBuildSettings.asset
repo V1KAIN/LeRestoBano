@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Thomas(H)/Scene/MainMenu.unity
     guid: 7de5aca20a298c54fafa4d83081abdc6
   - enabled: 1
+    path: Assets/Thomas(H)/Scene/IntoScene.unity
+    guid: 0f4dba7027c82b34c875ce35ad090b52
+  - enabled: 1
     path: Assets/Valentin/Scene/Comptoir.unity
     guid: 0bcde0b76c1a2ec4283bc3850f253394
   - enabled: 1
