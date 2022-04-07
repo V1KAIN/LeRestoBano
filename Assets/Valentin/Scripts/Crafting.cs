@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Crafting : MonoBehaviour
 {
-    public GameObject CheeseBurger1, CheeseBurger2;
+    public GameObject Burger1, Burger2;
     public GameObject Wrap1, Wrap2;
     public GameObject Octaburger1, Octaburger2 ;
     public GameObject Nonburger1, Nonburger2 ;
+    public GameObject CheeseBurger1, CheeseBurger2;
 
     public void Craft()
     {
@@ -31,12 +32,20 @@ public class Crafting : MonoBehaviour
             Wrap1.SetActive(true);
             Wrap2.SetActive(true);
         }
+        else if (InventoryScript.Pain >= 1 && InventoryScript.Steak >= 1 && InventoryScript.Fromage >= 1)
+        {
+            InventoryScript.Pain -= 1;
+            InventoryScript.Steak -= 1;
+            InventoryScript.Fromage -= 1;
+            CheeseBurger1.SetActive(true);
+            CheeseBurger2.SetActive(true);
+        }
         else if (InventoryScript.Pain >= 1 && InventoryScript.Steak >= 1)
         {
             InventoryScript.Pain -= 1;
             InventoryScript.Steak -= 1;
-            CheeseBurger1.SetActive(true);
-            CheeseBurger2.SetActive(true);
+            Burger1.SetActive(true);
+            Burger2.SetActive(true);
         }
         else if (InventoryScript.Pain >= 1)
         {

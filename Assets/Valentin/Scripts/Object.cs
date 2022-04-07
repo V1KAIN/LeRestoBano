@@ -4,7 +4,7 @@ using UnityEngine;
 public class Object : MonoBehaviour
 {
     
-    public bool Steak, Bacon, Poulet, Ketchup, Mayo, Pain, Galette, Fromage, Frite, Burger, Wrap, OctaB, NonBurger;
+    public bool Steak, Bacon, Poulet, Ketchup, Mayo, Pain, Galette, Fromage, Frite, Burger, Wrap, OctaB, NonBurger, CheeseBurger;
 
 
     private void Update()
@@ -80,13 +80,19 @@ public class Object : MonoBehaviour
         if (other.CompareTag("Torse") && NonBurger)
         {
             InventoryScript.NonBurger = true;
-            other.GetComponentInParent<PopUpTextScript>().SpawnText("nonburger");
+            other.GetComponentInParent<PopUpTextScript>().SpawnText("non burger");
             Destroy(gameObject);
         }
         if (other.CompareTag("Torse") && Wrap)
         {
             InventoryScript.Wrap = true;
             other.GetComponentInParent<PopUpTextScript>().SpawnText("wrap");
+            Destroy(gameObject);
+        }
+        if (other.CompareTag("Torse") && CheeseBurger)
+        {
+            InventoryScript.CheeseBurger = true;
+            other.GetComponentInParent<PopUpTextScript>().SpawnText("cheese burger");
             Destroy(gameObject);
         }
     }

@@ -16,4 +16,5 @@ public class InventoryScript : MonoBehaviour
     public static bool Wrap = false;
     public static bool OctaB = false;
     public static bool NonBurger = false;
+    public static bool CheeseBurger = false;
 }

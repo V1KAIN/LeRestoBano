@@ -366,13 +366,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: Mille merci mon ami !
+    Message: Je veut ca
   - ActorId: 0
-    Message: pa'd'souc
+    Message: ok
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
-  - Name: Riichard
+  - Name: Boss
     Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
 --- !u!114 &224613200
 MonoBehaviour:
@@ -391,9 +391,9 @@ MonoBehaviour:
   Benjamin2: {fileID: 1407982165}
   Benjamin3: {fileID: 2122687083}
   Richard: 0
-  Richard1: {fileID: 645881567}
-  Richard2: {fileID: 1376180163}
-  Richard3: {fileID: 224613198}
+  Richard1: {fileID: 1414510206}
+  Richard2: {fileID: 1399463441}
+  Richard3: {fileID: 1572913282}
   Boss: 1
   Boss1: {fileID: 224613198}
   Boss2: {fileID: 1376180163}
@@ -434,7 +434,7 @@ Animator:
   m_GameObject: {fileID: 224613198}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ba7bef8f23b709f4f977df87ddc58392, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -745,9 +745,9 @@ MonoBehaviour:
   Richard2: {fileID: 1399463441}
   Richard3: {fileID: 1572913282}
   Boss: 0
-  Boss1: {fileID: 0}
-  Boss2: {fileID: 0}
-  Boss3: {fileID: 0}
+  Boss1: {fileID: 224613198}
+  Boss2: {fileID: 1376180163}
+  Boss3: {fileID: 645881567}
 --- !u!95 &298437065
 Animator:
   serializedVersion: 3
@@ -963,30 +963,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogue:
-  - ActorId: 1
-    Message: "Mais salutations les plus distingu\xE9 mon cher gueux !"
   - ActorId: 0
-    Message: Salut gros.
-  - ActorId: 1
-    Message: "Auriez-vous l'aimabilit\xE9 de me pr\xE9par\xE9 une petite collation
-      ?"
-  - ActorId: 0
-    Message: C'est mon job.
-  - ActorId: 1
-    Message: "Alors, il me faudrais une galette de ma\xEEs sans gluten, accompagn\xE9
-      de son poulet fermier bio \xE9lev\xE9 en pleine air, sur son coulis de sauce
-      d'oeuf et de moutarde."
-  - ActorId: 0
-    Message: Un wrap poulet mayo donc ?
-  - ActorId: 1
-    Message: "Tout \xE0 fait tr\xE8s cher."
-  - ActorId: 0
-    Message: Ok, c'est ti'par
+    Message: mr
   Actors:
-  - Name: "C\xE9dric"
-    Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
-  - Name: Riichard
-    Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
+  - Name: putre
+    Sprite: {fileID: 21300000, guid: 807be3388c76fad4886b76f81e436240, type: 3}
 --- !u!114 &645881569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,9 +985,9 @@ MonoBehaviour:
   Benjamin2: {fileID: 1407982165}
   Benjamin3: {fileID: 2122687083}
   Richard: 0
-  Richard1: {fileID: 645881567}
-  Richard2: {fileID: 1376180163}
-  Richard3: {fileID: 224613198}
+  Richard1: {fileID: 1414510206}
+  Richard2: {fileID: 1399463441}
+  Richard3: {fileID: 1572913282}
   Boss: 1
   Boss1: {fileID: 224613198}
   Boss2: {fileID: 1376180163}
@@ -1047,7 +1028,7 @@ Animator:
   m_GameObject: {fileID: 645881567}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4d627c7defc9f1f42818002cc2f04f23, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1685,19 +1666,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: Alors mon ami, cette galette ?
+    Message: alors ca avance ?
   - ActorId: 0
-    Message: "Il \xE9tait \xE0 quoi d\xE9j\xE0 ton wrap ?"
-  - ActorId: 0
-    Message: En language normal s'teu plait.
-  - ActorId: 1
-    Message: Il me semble que en language gueux ca ce dit "Wrap poulet mayo"
-  - ActorId: 0
-    Message: A oui, j'y retourne.
+    Message: nan
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
-  - Name: Riichard
+  - Name: Boss
     Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
 --- !u!114 &1376180165
 MonoBehaviour:
@@ -1716,9 +1691,9 @@ MonoBehaviour:
   Benjamin2: {fileID: 1407982165}
   Benjamin3: {fileID: 2122687083}
   Richard: 0
-  Richard1: {fileID: 645881567}
-  Richard2: {fileID: 1376180163}
-  Richard3: {fileID: 224613198}
+  Richard1: {fileID: 1414510206}
+  Richard2: {fileID: 1399463441}
+  Richard3: {fileID: 1572913282}
   Boss: 1
   Boss1: {fileID: 224613198}
   Boss2: {fileID: 1376180163}
@@ -1759,7 +1734,7 @@ Animator:
   m_GameObject: {fileID: 1376180163}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d246387d47c1cfb4598270be17eabedc, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1903,9 +1878,9 @@ MonoBehaviour:
   Richard2: {fileID: 1399463441}
   Richard3: {fileID: 1572913282}
   Boss: 0
-  Boss1: {fileID: 0}
-  Boss2: {fileID: 0}
-  Boss3: {fileID: 0}
+  Boss1: {fileID: 224613198}
+  Boss2: {fileID: 1376180163}
+  Boss3: {fileID: 645881567}
 --- !u!61 &1399463444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2088,9 +2063,9 @@ MonoBehaviour:
   Richard2: {fileID: 1399463441}
   Richard3: {fileID: 1572913282}
   Boss: 0
-  Boss1: {fileID: 0}
-  Boss2: {fileID: 0}
-  Boss3: {fileID: 0}
+  Boss1: {fileID: 224613198}
+  Boss2: {fileID: 1376180163}
+  Boss3: {fileID: 645881567}
 --- !u!61 &1407982168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2390,9 +2365,9 @@ MonoBehaviour:
   Richard2: {fileID: 1399463441}
   Richard3: {fileID: 1572913282}
   Boss: 0
-  Boss1: {fileID: 0}
-  Boss2: {fileID: 0}
-  Boss3: {fileID: 0}
+  Boss1: {fileID: 224613198}
+  Boss2: {fileID: 1376180163}
+  Boss3: {fileID: 645881567}
 --- !u!1 &1434561686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3271,9 +3246,9 @@ MonoBehaviour:
   Richard2: {fileID: 1399463441}
   Richard3: {fileID: 1572913282}
   Boss: 0
-  Boss1: {fileID: 0}
-  Boss2: {fileID: 0}
-  Boss3: {fileID: 0}
+  Boss1: {fileID: 224613198}
+  Boss2: {fileID: 1376180163}
+  Boss3: {fileID: 645881567}
 --- !u!61 &2122687086
 BoxCollider2D:
   m_ObjectHideFlags: 0
