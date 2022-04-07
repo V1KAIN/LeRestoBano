@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class DialogueOnTrigger : MonoBehaviour
@@ -31,6 +29,8 @@ public class DialogueOnTrigger : MonoBehaviour
         {
             Ben = false;
             InventoryScript.Burger = false;
+            InventoryScript.Wrap = false;
+            InventoryScript.OctaB = false;
             Destroy(Benjamin2);
             Benjamin3.SetActive(true);
         }
@@ -47,7 +47,9 @@ public class DialogueOnTrigger : MonoBehaviour
         if (other.CompareTag("Tête") && Richard && InventoryScript.Wrap == true)
         {
             Ric2 = false;
+            InventoryScript.Burger = false;
             InventoryScript.Wrap = false;
+            InventoryScript.OctaB = false;
             Destroy(Richard2);
             Richard3.SetActive(true);
         }
@@ -68,8 +70,10 @@ public class DialogueOnTrigger : MonoBehaviour
             Ben = false;
             Ric1 = false;
             Ric2 = false;
-            InventoryScript.OctaB = false;           
-            Debug.Log("Gagné");
+            InventoryScript.Burger = false;
+            InventoryScript.Wrap = false;
+            InventoryScript.OctaB = false;
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
