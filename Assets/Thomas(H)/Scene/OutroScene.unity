@@ -642,6 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnimator: {fileID: 331113015}
+  SceneState: 1
 --- !u!61 &559311412
 BoxCollider2D:
   m_ObjectHideFlags: 0
