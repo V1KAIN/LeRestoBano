@@ -6,6 +6,7 @@ using UnityEngine;
 public class DialogueOnTrigger : MonoBehaviour
 {
     public static bool Ben ;
+    public static bool Ric;
     
     public bool Benjamin;
     public GameObject Benjamin1, Benjamin2, Benjamin3;
@@ -36,6 +37,7 @@ public class DialogueOnTrigger : MonoBehaviour
             GetComponent<DialogueTrigger>().StartDialogue();
             Destroy(Richard1);
             Richard2.SetActive(true);
+            Ric = true;
         }
         
         if (other.CompareTag("Tête") && Richard && InventoryScript.Wrap == true)
@@ -52,6 +54,11 @@ public class DialogueOnTrigger : MonoBehaviour
         {
             Benjamin1.SetActive(false);
             Benjamin2.SetActive(true);
+        } 
+        if (Ric)
+        {
+            Richard1.SetActive(false);
+            Richard2.SetActive(true);
         } 
     }
 }

@@ -232,7 +232,7 @@ MonoBehaviour:
   NextMessageKey: 32
   PreviousMessageKey: 8
   CanGoBackMessages: 1
-  typingSpeed: 0.05
+  typingSpeed: 0.04
 --- !u!95 &5592411532405117247
 Animator:
   serializedVersion: 3
