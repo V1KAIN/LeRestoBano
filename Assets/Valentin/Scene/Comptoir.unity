@@ -373,8 +373,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Boss
     Sprite: {fileID: 21300000, guid: 72e15a102cc963942aefc3bc070fe573, type: 3}
+    Sound: Boss
 --- !u!114 &224613200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,6 +547,8 @@ MonoBehaviour:
   Haut: 0
   Comptoir: 0
   Frigo: 0
+  ChangeM1: 0
+  ChangeM2: 0
   CraftPanel: {fileID: 0}
   FrigoPanel: {fileID: 0}
 --- !u!61 &293693704
@@ -724,8 +728,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Benjamin
     Sprite: {fileID: 21300000, guid: f78cf10ffb68e70438bcdca01f628d9e, type: 3}
+    Sound: Benjamin
 --- !u!114 &298437064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,6 +937,92 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &607993156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607993158}
+  - component: {fileID: 607993157}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &607993157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607993156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1efb18fd879f69147b96324975f235d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Menu
+    clip: {fileID: 8300000, guid: 81580a09e919a7a47bd7a91b70e29e9c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 95adc13cefba659448efb3dc7084fce5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Exterieur
+    clip: {fileID: 8300000, guid: 56eb57d8957fe3646912b58ab1840e50, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Plus
+    clip: {fileID: 8300000, guid: d044eeec6e64e3f4d963513b2eda10be, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Benjamin
+    clip: {fileID: 8300000, guid: 26d2ea1c51bc19344888db0e660fa427, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Clodo
+    clip: {fileID: 8300000, guid: 05e273162efea60409d5dd377f14fc98, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss
+    clip: {fileID: 8300000, guid: e77ddfcedd9d7d04699cb925ca320427, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &607993158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607993156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0818722, y: -1.7096363, z: -2.4951663}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &645881567
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,6 +1062,7 @@ MonoBehaviour:
   Actors:
   - Name: putre
     Sprite: {fileID: 21300000, guid: 807be3388c76fad4886b76f81e436240, type: 3}
+    Sound: 
 --- !u!114 &645881569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1678,8 +1771,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Boss
     Sprite: {fileID: 21300000, guid: 72e15a102cc963942aefc3bc070fe573, type: 3}
+    Sound: Boss
 --- !u!114 &1376180165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1860,8 +1955,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Richard
     Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
+    Sound: Richard
 --- !u!114 &1399463443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2045,8 +2142,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Benjamin
     Sprite: {fileID: 21300000, guid: f78cf10ffb68e70438bcdca01f628d9e, type: 3}
+    Sound: Benjamin
 --- !u!114 &1407982167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2347,8 +2446,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Richard
     Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
+    Sound: Richard
 --- !u!114 &1414510212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2578,8 +2679,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Richard
     Sprite: {fileID: 21300000, guid: eea259bfb0892084384d8ea3b58ce2ec, type: 3}
+    Sound: Richard
 --- !u!114 &1572913284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3228,8 +3331,10 @@ MonoBehaviour:
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+    Sound: Cedric
   - Name: Benjamin
     Sprite: {fileID: 21300000, guid: f78cf10ffb68e70438bcdca01f628d9e, type: 3}
+    Sound: Benjamin
 --- !u!114 &2122687085
 MonoBehaviour:
   m_ObjectHideFlags: 0

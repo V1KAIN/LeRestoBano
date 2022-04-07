@@ -707,6 +707,8 @@ MonoBehaviour:
   Haut: 0
   Comptoir: 0
   Frigo: 1
+  ChangeM1: 0
+  ChangeM2: 0
   CraftPanel: {fileID: 1254934153}
   FrigoPanel: {fileID: 2002178679}
 --- !u!61 &451621893
@@ -1285,6 +1287,8 @@ MonoBehaviour:
   Haut: 1
   Comptoir: 0
   Frigo: 0
+  ChangeM1: 0
+  ChangeM2: 1
   CraftPanel: {fileID: 0}
   FrigoPanel: {fileID: 0}
 --- !u!61 &659463358
@@ -3617,6 +3621,8 @@ MonoBehaviour:
   Haut: 0
   Comptoir: 1
   Frigo: 0
+  ChangeM1: 0
+  ChangeM2: 0
   CraftPanel: {fileID: 1254934153}
   FrigoPanel: {fileID: 0}
 --- !u!61 &1445857455
@@ -4054,6 +4060,8 @@ MonoBehaviour:
   Haut: 0
   Comptoir: 0
   Frigo: 0
+  ChangeM1: 0
+  ChangeM2: 0
   CraftPanel: {fileID: 0}
   FrigoPanel: {fileID: 0}
 --- !u!61 &1837055150
