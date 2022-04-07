@@ -63,9 +63,13 @@ public class DialogueOnTrigger : MonoBehaviour
         
         if (other.CompareTag("Tête") && Boss && InventoryScript.OctaB == true)
         {
+            Bos2 = false;
+            Bos1 = false;
+            Ben = false;
+            Ric1 = false;
+            Ric2 = false;
+            InventoryScript.OctaB = false;           
             Debug.Log("Gagné");
-            InventoryScript.OctaB = false;
-            
         }
     }
 
