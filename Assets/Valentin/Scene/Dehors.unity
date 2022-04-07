@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 678490793}
   - component: {fileID: 678490796}
   - component: {fileID: 678490795}
+  - component: {fileID: 678490797}
   m_Layer: 0
   m_Name: poulet
   m_TagString: Untagged
@@ -500,6 +501,32 @@ MonoBehaviour:
   Wrap: 0
   OctaB: 0
   NonBurger: 0
+--- !u!114 &678490797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678490792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb10207af01f784384a3ef79e3e5c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogue:
+  - ActorId: 1
+    Message: Mais mec, tu fou quoi avec mon poulet ?!
+  - ActorId: 0
+    Message: "Euh d\xE9so, j'en ai besoin pour faire un wrap."
+  - ActorId: 1
+    Message: J'ai l'impression que j'en ai plus besoin que toi !
+  - ActorId: 0
+    Message: "Bonne journ\xE9e."
+  Actors:
+  - Name: "C\xE9dric"
+    Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+  - Name: Clodo
+    Sprite: {fileID: 21300000, guid: 2cfe6b07cba09aa4a86016ffad1258ed, type: 3}
 --- !u!224 &679219267 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5592411532405117219, guid: f1b98a2b7fb110846bdbe8be1f9075f1, type: 3}
@@ -517,6 +544,7 @@ GameObject:
   - component: {fileID: 832455101}
   - component: {fileID: 832455104}
   - component: {fileID: 832455103}
+  - component: {fileID: 832455105}
   m_Layer: 0
   m_Name: bacon
   m_TagString: Untagged
@@ -640,6 +668,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7069666, y: 0.41286486}
   m_EdgeRadius: 0
+--- !u!114 &832455105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832455100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb10207af01f784384a3ef79e3e5c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogue:
+  - ActorId: 1
+    Message: "Ca fera 100 pi\xE8ces le bacon."
+  - ActorId: 0
+    Message: Ouais, j'ai laisser mes sous dans le resto.
+  Actors:
+  - Name: "C\xE9dric"
+    Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
+  - Name: Clodo
+    Sprite: {fileID: 21300000, guid: 2cfe6b07cba09aa4a86016ffad1258ed, type: 3}
 --- !u!1 &975854165
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,7 +1031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5592411532405117219, guid: f1b98a2b7fb110846bdbe8be1f9075f1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 170
+      value: -154
       objectReference: {fileID: 0}
     - target: {fileID: 5592411532405117219, guid: f1b98a2b7fb110846bdbe8be1f9075f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1179,7 +1229,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243412208}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1232,6 +1282,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ea09cf33da71a146b15225b79b32f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Benjamin: 0
+  Benjamin1: {fileID: 0}
+  Benjamin2: {fileID: 0}
+  Benjamin3: {fileID: 0}
+  Richard: 0
+  Richard1: {fileID: 0}
+  Richard2: {fileID: 0}
+  Richard3: {fileID: 0}
 --- !u!1 &1305193649
 GameObject:
   m_ObjectHideFlags: 0

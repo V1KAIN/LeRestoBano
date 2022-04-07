@@ -230,7 +230,7 @@ MonoBehaviour:
   backgroundBox: {fileID: 5592411532405117219}
   DialogueContentHolder: {fileID: 5592411532432918691}
   CanGoBackMessages: 1
-  typingSpeed: 0.05
+  typingSpeed: 0.03
 --- !u!95 &5592411532405117247
 Animator:
   serializedVersion: 3

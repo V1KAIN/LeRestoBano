@@ -38,6 +38,8 @@ public class Target : MonoBehaviour
         AdjustPerspective();
         AdjustSortingLayer();
         UpdateAnimation();
+
+        if (isInMenu) followSpot = transform.position;
     }
 
     private void UpdateAnimation()
