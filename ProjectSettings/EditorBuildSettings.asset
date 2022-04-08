@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Thomas(H)/Scene/CreditScene.unity
     guid: 3352f0d00da2c094ead2abd677a0f0d5
+  - enabled: 1
+    path: Assets/Thomas(H)/Scene/EasterEggScene.unity
+    guid: 1dbcdfb94ff9a094caeac7b749bf6c7f
   m_configObjects: {}

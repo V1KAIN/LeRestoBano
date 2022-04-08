@@ -605,17 +605,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: "H\xE9 toi, viens voir!"
+    Message: CEDRIC !
   - ActorId: 0
-    Message: Oui ?
+    Message: 'Oui ? '
   - ActorId: 1
     Message: "On a re\xE7u de mauvais avis sur internet sur la qualit\xE9 du service
-      du restaurant, alors fait attention et demande au client de mettre de bon avis
-      sur goglee!"
+      du restaurant, alors sors toi les doigts du cul et demande aux clients de mettre
+      de bons avis sur Goglee!"
   - ActorId: 0
     Message: Ah ouais cool.
   - ActorId: 1
-    Message: Attention tu risques de perdre ton boulot, alors VAS TRAVAILLER!
+    Message: "Attention, ton job ne tient qu'\xE0 un fil. ALORS GROUILLE TOI ! "
   - ActorId: 0
     Message: ok...
   Actors:

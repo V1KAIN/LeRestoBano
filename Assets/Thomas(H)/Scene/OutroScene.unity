@@ -610,11 +610,11 @@ MonoBehaviour:
   - ActorId: 0
     Message: 'Hein ? '
   - ActorId: 1
-    Message: Tu fais le malin en plus
+    Message: TU FAIS LE MALIN EN PLUS ?!
   - ActorId: 0
-    Message: Hein
+    Message: Hein ?
   - ActorId: 1
-    Message: "T\u2019EST VIRER! D\xC9GAGE!"
+    Message: "T\u2019ES VIR\xC9 ! D\xC9GAGE !"
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}

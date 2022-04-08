@@ -365,7 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue:
   - ActorId: 1
-    Message: "Je veut un menu OctoCheeseBaconSupraSauceMayoKetchupBurger, et plus
+    Message: "Je veux un menu OctoCheeseBaconSupraSauceMayoKetchupBurger, et plus
       vite que \xE7a !"
   - ActorId: 0
     Message: Ok.
@@ -373,7 +373,7 @@ MonoBehaviour:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
     Sound: Cedric
-  - Name: Boss
+  - Name: Boss(?)
     Sprite: {fileID: 21300000, guid: 72e15a102cc963942aefc3bc070fe573, type: 3}
     Sound: Boss
 --- !u!114 &224613200
@@ -2000,16 +2000,16 @@ MonoBehaviour:
   - ActorId: 0
     Message: "Un OctoQuoi d\xE9j\xE0 ?"
   - ActorId: 1
-    Message: "Ecoute moi bien mon con, tu vas me chercher une putain de frite et
-      me l'accompagn\xE9 d'un burger, constituer de pain, mayo, ketchup, bacon, fromage,
-      et de 8 steaks !"
+    Message: "\xC9coute moi bien mon con, tu vas me chercher une putain de frite
+      et me l'accompagner d'un burger, constitu\xE9 de pain, mayo, ketchup, bacon,
+      fromage, et de 8 steaks !"
   - ActorId: 0
-    Message: "Oui bien sur, je le savais, \xE7a arrive tout de suite."
+    Message: "Oui bien s\xFBr, je le savais, \xE7a arrive tout de suite."
   Actors:
   - Name: "C\xE9dric"
     Sprite: {fileID: 21300000, guid: aee8655880b020f4ba70d46e125c4e62, type: 3}
     Sound: Cedric
-  - Name: Boss
+  - Name: Boss(?)
     Sprite: {fileID: 21300000, guid: 72e15a102cc963942aefc3bc070fe573, type: 3}
     Sound: Boss
 --- !u!114 &1376180165
@@ -3102,7 +3102,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Voulez vous retournez au menu ?
+  m_Text: Voulez-vous retourner au menu ?
 --- !u!222 &1506964977
 CanvasRenderer:
   m_ObjectHideFlags: 0
