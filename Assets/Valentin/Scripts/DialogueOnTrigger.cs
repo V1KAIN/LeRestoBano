@@ -74,7 +74,7 @@ public class DialogueOnTrigger : MonoBehaviour
             InventoryScript.Burger = false;
             InventoryScript.Wrap = false;
             InventoryScript.OctaB = false;
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("OutroScene");
         }
     }
 

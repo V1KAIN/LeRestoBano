@@ -48,12 +48,12 @@ public class DoSomethingOnTrigger : MonoBehaviour
     private void ExtToInt()
     {
          FindObjectOfType<AudioManager>().Stop("Exterieur");
-                    FindObjectOfType<AudioManager>().Play("Theme");
+                    FindObjectOfType<AudioManager>().Play("Jeu");
     }
 
     private void IntToExt()
     {
-        FindObjectOfType<AudioManager>().Stop("Theme");
+        FindObjectOfType<AudioManager>().Stop("Jeu");
                     FindObjectOfType<AudioManager>().Play("Exterieur");
     }
 }

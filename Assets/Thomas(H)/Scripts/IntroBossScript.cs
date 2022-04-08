@@ -44,8 +44,12 @@ public class IntroBossScript : MonoBehaviour
         switch (IOState)
         {
             case IOSceneState.Intro: MainMenuManager.LoadNextScene();
+                FindObjectOfType<AudioManager>().Play("Jeu");
+                FindObjectOfType<AudioManager>().Stop("Theme");
                 break;
             case IOSceneState.Outro: MainMenuManager.LoadSceneAtIndex(6);
+                FindObjectOfType<AudioManager>().Stop("Jeu");
+                FindObjectOfType<AudioManager>().Play("Theme");
                 break;
         }
         

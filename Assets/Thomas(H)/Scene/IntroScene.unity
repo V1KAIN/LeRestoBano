@@ -638,6 +638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnimator: {fileID: 331113015}
+  IOState: 0
 --- !u!61 &559311412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1297,104 +1298,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.45843738, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1725654443
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1725654445}
-  - component: {fileID: 1725654444}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1725654444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725654443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1efb18fd879f69147b96324975f235d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Menu
-    clip: {fileID: 8300000, guid: 81580a09e919a7a47bd7a91b70e29e9c, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: Theme
-    clip: {fileID: 8300000, guid: 95adc13cefba659448efb3dc7084fce5, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: Exterieur
-    clip: {fileID: 8300000, guid: 56eb57d8957fe3646912b58ab1840e50, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: Plus
-    clip: {fileID: 8300000, guid: d044eeec6e64e3f4d963513b2eda10be, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Benjamin
-    clip: {fileID: 8300000, guid: 26d2ea1c51bc19344888db0e660fa427, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Clodo
-    clip: {fileID: 8300000, guid: 05e273162efea60409d5dd377f14fc98, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Boss
-    clip: {fileID: 8300000, guid: e77ddfcedd9d7d04699cb925ca320427, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Cedric
-    clip: {fileID: 8300000, guid: b057067e05ff4064086afce47cf63ded, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Richard
-    clip: {fileID: 8300000, guid: b780ecb95cce9ba4b9906df5b54047f4, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
---- !u!4 &1725654445
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725654443}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0818722, y: -1.7096363, z: -2.4951663}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1766813729
 GameObject:
   m_ObjectHideFlags: 0
